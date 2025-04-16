@@ -4,21 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Faculty profiles for School of Science and Technology at USIU-Africa">
-    <title>SST Faculty Profiles | USIU-Africa</title>
+    <title>Faculty Directory | School of Science & Technology | USIU-Africa</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="page-header">
-        <h1>School of Science & Technology Faculty</h1>
-        <p>Meet our distinguished faculty members</p>
+    <header class="sst-header">
+        <div class="university-header">
+            <img src="https://www.usiu.ac.ke/wp-content/uploads/2022/08/usiu-logo.png" alt="USIU-Africa Logo" class="logo">
+            <div class="header-text">
+                <h1>United States International University-Africa</h1>
+                <h2>School of Science and Technology</h2>
+            </div>
+        </div>
+        <nav class="breadcrumb">
+            <a href="https://www.usiu.ac.ke">USIU-Africa</a> &gt;
+            <a href="https://www.usiu.ac.ke/schools">Schools</a> &gt;
+            <a href="https://www.usiu.ac.ke/sst">SST</a> &gt;
+            <span>Faculty Directory</span>
+        </nav>
     </header>
 
-    <main class="faculty-container" id="facultyContainer">
-        <!-- Faculty cards will be dynamically inserted here by JavaScript -->
+    <main class="faculty-directory">
+        <section class="page-intro">
+            <h1>Faculty Directory</h1>
+            <p>Our distinguished faculty members bring a wealth of knowledge and experience to the School of Science and Technology.</p>
+            <div class="department-filter">
+                <label for="department-select">Filter by Department:</label>
+                <select id="department-select">
+                    <option value="all">All Departments</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="is">Information Systems</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="it">Information Technology</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="faculty-container" id="facultyContainer">
+            <!-- Faculty cards will be inserted here by JavaScript -->
+        </div>
     </main>
 
-    <footer class="page-footer">
-        <p>&copy; 2023 USIU-Africa School of Science & Technology. All rights reserved.</p>
+    <footer class="sst-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Off Thika Road, Kasarani, Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 730 116 000</p>
+                <p><i class="fas fa-envelope"></i> sst@usiu.ac.ke</p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.usiu.ac.ke/sst/programs">Academic Programs</a></li>
+                    <li><a href="https://www.usiu.ac.ke/sst/research">Research</a></li>
+                    <li><a href="https://www.usiu.ac.ke/sst/events">Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 USIU-Africa School of Science & Technology. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
